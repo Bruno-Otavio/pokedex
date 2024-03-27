@@ -1,6 +1,6 @@
 export const load = async ({ fetch }) => {
     const fetchPokemon = async () => {
-        const limit = 10;
+        const limit = 12;
         const pokemons = [];    
 
         for (let i = 1; i <= limit; i++) {
@@ -9,7 +9,7 @@ export const load = async ({ fetch }) => {
             pokemons.push(pokemonData);
         }
 
-        console.log(pokemons);
+        console.log(pokemons[0].types);
         return pokemons;
     };
 
